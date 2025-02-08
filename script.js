@@ -4,8 +4,8 @@ const projectData = {
     title: 'Toppers Tutoring',
     images: [
       '/images/toppers_project.png',
-      '/images/toppers_2.png',
-      '/images/toppers_3.png'
+      '/images/topper2.png',
+      '/images/topper3.png'
     ],
     description: `A comprehensive tutoring platform built to bridge educational gaps and make quality tutoring accessible to all students. 
 
