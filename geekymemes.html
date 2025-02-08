@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="geeky.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="/geekymemes.html" class="nav-link">Fav Geeky Memes🤓</a>
+        </nav>
+    </header>
     <div class="container">
-        <header>
+        <div class="prev_header">
             <h1>Programming Memes Gallery</h1>
             <p>Share your favorite programming memes with the community!</p>
-        </header>
+        </div>
 
         <section class="upload-section">
             <div class="upload-box" id="dropZone">
                 <input type="file" id="fileInput" accept="image/*" hidden>
                 <div class="upload-content">
-                    <i class="fa fa-upload" aria-hidden="true"></i>
+                    <p><i class="fa fa-upload" aria-hidden="true"></i></p>
                     <p>Drag and drop your meme here or</p>
                     <button class="upload-btn" id="selectFileBtn">Select File</button>
                 </div>
