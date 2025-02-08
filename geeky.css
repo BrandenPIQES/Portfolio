@@ -363,6 +363,16 @@ header {
 
 /* ============ RESPONSIVE DESIGN ============ */
 @media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+    .header {
+        padding-left: 0;
+    }
+
     .container {
         padding: 10px;
     }
@@ -382,6 +392,11 @@ header {
 }
 
 @media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .modal-content {
         margin: 10px;
     }
