@@ -1,0 +1,383 @@
+/* ============ GENERAL STYLES ============ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ============ HEADER STYLES ============ */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+/* ============ UPLOAD SECTION STYLES ============ */
+.upload-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #666;
+}
+
+.upload-box.dragover {
+    border-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.upload-icon {
+    width: 64px;
+    height: 64px;
+    opacity: 0.6;
+}
+
+/* ============ BUTTON STYLES ============ */
+.upload-btn,
+.post-btn,
+.comment-btn,
+.nav-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover,
+.post-btn:hover,
+.comment-btn:hover,
+.nav-btn:hover {
+    background-color: #45a049;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.nav-btn.prev-btn {
+    left: 20px;
+}
+
+.nav-btn.next-btn {
+    right: 20px;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ============ PREVIEW STYLES ============ */
+.preview-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.preview-image {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* ============ CAPTION INPUT STYLES ============ */
+.caption-input-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.caption-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.caption-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* ============ MEME GRID STYLES ============ */
+.memes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.meme-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.meme-card:hover {
+    transform: translateY(-5px);
+}
+
+.meme-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.meme-info {
+    padding: 15px;
+}
+
+.meme-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.meme-caption {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.meme-reactions {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.meme-date {
+    color: #666;
+    font-size: 0.8em;
+}
+
+/* ============ MODAL STYLES ============ */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    z-index: 2;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.modal-image-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.modal-image-container img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.modal-info {
+    padding: 0 10px;
+}
+
+.modal-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.modal-caption {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* ============ REACTION STYLES ============ */
+.reaction-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.reaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.reaction-btn:hover {
+    background-color: #f0f2f5;
+}
+
+.reaction-btn.active {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+}
+
+.reaction-count {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* ============ COMMENTS STYLES ============ */
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.comments-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .modal-content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .reaction-buttons {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        margin: 10px;
+    }
+
+    .comment-input-container {
+        flex-direction: column;
+    }
+
+    .comment-btn {
+        width: 100%;
+    }
+
+    .caption-input-container {
+        flex-direction: column;
+    }
+
+    .post-btn {
+        width: 100%;
+    }
+}

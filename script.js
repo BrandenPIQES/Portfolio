@@ -31,7 +31,7 @@ The platform currently serves over 100 active students and has facilitated more 
     title: 'GET-RECIPE',
     images: [
       '/images/get_recipe_project.png',
-      '/images/recipe_2.png',
+      '/images/get-rec.jpg',
       '/images/recipe_3.png'
     ],
     description: `An AI-powered recipe recommendation system that helps users discover meals based on their preferences and available ingredients.
@@ -52,7 +52,7 @@ Technical Stack:
 
 Impact:
 Processing over 500 recipe requests daily with a 95% user satisfaction rate. The app has helped reduce food waste by suggesting recipes based on available ingredients.`,
-    link: 'https://github.com/BrandenPIQES/GET-RECIPE'
+    link: 'https://get-recipe.onrender.com/'
   },
   'phumla': {
     title: 'Phumla Kamnandi Hotel Management System',

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Memes Upload</title>
+    <link rel="stylesheet" href="geeky.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Programming Memes Gallery</h1>
+            <p>Share your favorite programming memes with the community!</p>
+        </header>
+
+        <section class="upload-section">
+            <div class="upload-box" id="dropZone">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <div class="upload-content">
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                    <p>Drag and drop your meme here or</p>
+                    <button class="upload-btn" id="selectFileBtn">Select File</button>
+                </div>
+            </div>
+            <div class="preview-container" id="previewContainer"></div>
+            <div class="caption-input-container" id="captionInputContainer" style="display: none;">
+                <input type="text" id="captionInput" placeholder="Add your meme caption..." class="caption-input">
+                <button class="post-btn" id="postMemeBtn">Post Meme</button>
+            </div>
+        </section>
+
+        <section class="memes-grid" id="memesGrid">
+            <!-- Memes will be displayed here -->
+        </section>
+    </div>
+
+    <!-- Modal for enlarged meme view -->
+    <div class="modal" id="memeModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-image-container">
+                <img src="" alt="" id="modalImage">
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title"></h3>
+                <p class="modal-caption"></p>
+                <div class="reaction-buttons">
+                    <button class="reaction-btn laugh-btn">
+                        😂 <span class="reaction-count">0</span>
+                    </button>
+                    <button class="reaction-btn love-btn">
+                        ❤️ <span class="reaction-count">0</span>
+                    </button>
+                </div>
+                <div class="comments-section">
+                    <h4>Comments</h4>
+                    <div class="comments-container"></div>
+                    <div class="comment-input-container">
+                        <input type="text" class="comment-input" placeholder="Add a comment...">
+                        <button class="comment-btn">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn prev-btn" id="prevMeme">←</button>
+        <button class="nav-btn next-btn" id="nextMeme">→</button>
+    </div>
+
+    <script src="geeky.js"></script>
+</body>
+</html>
