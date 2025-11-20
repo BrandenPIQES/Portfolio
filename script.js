@@ -1,5 +1,39 @@
 // Project data structure
 const projectData = {
+  'uav-flight-simulator': {
+    title: 'UAV Flight Path Simulator',
+    images: [
+      '/images/uav/uaviators.png',
+      '/images/uav/uav_home.png',
+      '/images/uav/uav_drone_fly.png',
+      '/images/uav/uav_comparison.png'
+    ],
+    description: `This is my final year CS project at the University of Cape Town (UCT). UAVs (drones) are increasingly used to survey cultural heritage sites and complex structures, requiring careful flight path planning to capture complete, high-quality imagery for 3D reconstruction. Manual flight planning is time-consuming and error-prone, often resulting in incomplete coverage or excessive flight times that drain battery life.
+
+  This desktop application enables drone operators and researchers to visualize, compare, and optimize flight trajectories before deployment, dramatically reducing survey time and improving data quality.
+
+  Key Features:
+  • Interactive 3D visualization of terrain models with flight path overlays
+  • Multi-trajectory comparison with quantitative efficiency metrics
+  • Real-time waypoint editing with live first-person view preview
+  • Advanced interpolation analysis (linear vs. spline paths)
+  • Mission simulation with animated drone movement and trajectory recording
+  • High-quality video capture (up to 4K resolution) for mission documentation
+  • Undo/redo system for safe trajectory modifications
+  • Flexible workspace layouts optimized for different workflows
+
+  Technical Stack:
+  • Frontend: PySide6 (Qt for Python) with custom draggable UI components
+  • 3D Rendering: VTK (Visualization Toolkit) with dual rendering pipelines
+  • Computer Vision: OpenCV for video processing and frame capture
+  • Scientific Computing: NumPy, SciPy for trajectory calculations and interpolation
+  • Architecture: Layered design with signal-slot communication and multi-threading
+
+  Impact:
+  This system transforms UAV survey planning from a manual, iterative field process into a data-driven desktop workflow. Mission planners can now evaluate multiple flight paths in minutes rather than hours, identify optimal routes that minimize flight time while maximizing coverage, and generate mission documentation automatically. The real-time editing capabilities enable instant "what-if" analysis, while the comparison tools provide quantitative evidence for route selection decisions. Currently being evaluated for deployment in archaeological survey projects and structural inspection workflows.`,
+      link: 'https://gitlab.cs.uct.ac.za/big-5-reunion/uavflight-path'
+    },
+
   'toppers-tutoring': {
     title: 'Toppers Tutoring',
     images: [
@@ -18,15 +52,13 @@ Key Features:
 
 Technical Stack:
 • Frontend: HTML5, CSS3, JavaScript
-• Backend: Node.js with Express
-• Database: MongoDB
-• Authentication: JWT
-• Payment Integration: Stripe
 
 Impact:
-The platform currently serves over 100 active students and has facilitated more than 1000 tutoring sessions. Our student satisfaction rate is consistently above 95%, and we've seen an average grade improvement of 15% among regular users.`,
-    link: 'https://topperstutoring.onrender.com/'
+The platform currently serves over 100 active students. Our student satisfaction rate is consistently above 95%, and we've seen an average grade improvement of 15% among regular users.`,
+    link: 'https://topperstutoring.com/'
   },
+
+
   'get-recipe': {
     title: 'GET-RECIPE',
     images: [
@@ -54,6 +86,7 @@ Impact:
 Processing over 500 recipe requests daily with a 95% user satisfaction rate. The app has helped reduce food waste by suggesting recipes based on available ingredients.`,
     link: 'https://get-recipe.onrender.com/'
   },
+
   'phumla': {
     title: 'Phumla Kamnandi Hotel Management System',
     images: [
@@ -82,6 +115,7 @@ Impact:
 Successfully implemented across 3 hotel locations, reducing booking errors by 75% and improving staff efficiency by 40%.`,
     link: 'https://github.com/BrandenPIQES/Hotel-Management-System'
   },
+
   'sandpile': {
     title: 'Abelian Sandpile Simulation',
     images: [
@@ -109,6 +143,8 @@ Research Findings:
 Achieved up to 4x speed improvement with parallel processing on an 8-core system compared to serial processing.`,
     link: 'https://github.com/BrandenPIQES/Abelian-Sandpile-Sim-'
   },
+
+
   'swimmers': {
     title: 'Medley Relay Swimming Race Simulation',
     images: [
@@ -141,6 +177,8 @@ Learning Outcomes:
 The project successfully demonstrates complex threading concepts through an engaging sports simulation.`,
     link: 'https://github.com/BrandenPIQES/Medley-Relay-Swim'
   },
+
+
   'wave': {
     title: 'WAVE File Decoder',
     images: [
@@ -175,6 +213,8 @@ Learning Outcomes:
 This project provided invaluable experience in low-level programming and computer architecture concepts.`,
     link: 'https://github.com/BrandenPIQES/.WAVE-file-exploration'
   },
+
+
   'ecommerce': {
     title: 'E-commerce Platform with Open Payments',
     images: [
@@ -209,6 +249,8 @@ Achievements:
 This project showcases modern payment integration and e-commerce best practices.`,
     link: 'https://github.com/BrandenPIQES/Group-6-'
   },
+
+
   'zwiri': {
     title: 'Zwiri - The Intelligent Assistant',
     images: [

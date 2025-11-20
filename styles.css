@@ -288,6 +288,9 @@ body {
   margin-bottom: 20px;
   white-space: pre-line;
   color: #333;
+  text-align: justify;  
+  text-justify: inter-word;
+  white-space: pre-line;
 }
 
 .modal-link {
